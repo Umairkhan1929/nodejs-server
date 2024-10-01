@@ -11,7 +11,7 @@ const server = createServer((req, res) => {
     const parsedUrl = new URL(url, `http://${req.headers.host}`);
 
 //     // Set response header to JSON
-    // res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'application/json');
 
     // if (method === 'GET' && parsedUrl.pathname === '/api/items') {
     //     res.statusCode = 200;
