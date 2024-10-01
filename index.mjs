@@ -13,9 +13,9 @@ const server = createServer((req, res) => {
 //     // Set response header to JSON
     res.setHeader('Content-Type', 'application/json');
 
-    // if (method === 'GET' && parsedUrl.pathname === '/api/items') {
-    //     res.statusCode = 200;
-    //     res.end(JSON.stringify({ message: 'GET request - Fetching all items' }));
+    if (method === 'GET' && parsedUrl.pathname === '/api/items') {
+        res.statusCode = 200;
+        res.end(JSON.stringify({ message: 'GET request - Fetching all items' }));
 
 //         // POST Request
     // } else if (method === 'POST' && parsedUrl.pathname === '/api/items') {
@@ -52,7 +52,7 @@ const server = createServer((req, res) => {
     // } else {
         // res.statusCode = 404;
         // res.end(JSON.stringify({ message: 'Route not found' }));
-    // }
+    }
 })
 
 server.listen(PORT, () => console.log(`Server is listening here: http://localhost:${PORT}`))
