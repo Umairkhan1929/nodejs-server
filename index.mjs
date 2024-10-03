@@ -3,7 +3,6 @@ import { createServer } from 'node:http'
 const PORT = 3000
 
 const server = createServer((req, res) => {
-    // picking up stuff from req object
     // console.log({ method: req.method, url: req.url })
 
     // destructure stuff from req
