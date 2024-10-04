@@ -14,7 +14,7 @@ const myServer = createServer((req, res)=>{
         res.end('This is the About Page.')
     } else {
         res.writeHead(404, {'Content-Type': 'text/plain'})
-        res.end('404 not found')
+        res.end('404 route not found')
     }
 
 
